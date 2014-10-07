@@ -513,6 +513,8 @@ static void handle_set_parameter_coverart(rtsp_conn_info *conn,
     } else {
         metadata_cover_image(NULL, 0, NULL);
     }
+
+    metadata_write();
 }
 
 static void handle_set_parameter(rtsp_conn_info *conn,
