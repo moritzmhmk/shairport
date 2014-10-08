@@ -106,6 +106,7 @@ void metadata_write(void) {
     write_one(title);
     write_one(album);
     write_one(artwork);
+    metadata_set(&player_meta.artwork, "");
     write_one(genre);
     write_one(comment);
 
